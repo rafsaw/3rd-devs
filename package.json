@@ -2,13 +2,13 @@
   "name": "aidevs3",
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.11",
-    "@types/bun": "latest",
-    "@types/express": "^4.17.21",
+    "@types/bun": "^1.1.13",
+    "@types/express": "^5.0.0",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.7.5",
+    "@types/node": "^22.9.0",
     "@types/uuid": "^10.0.0",
-    "drizzle-kit": "^0.24.2",
-    "tsx": "^4.19.1"
+    "drizzle-kit": "^0.28.1",
+    "tsx": "^4.19.2"
   },
   "scripts": {
     "advanced_web_search": "bun advanced_web_search/app.ts",
@@ -126,7 +126,7 @@
     "pdf2html": "3.1.0",
     "pdf2pic": "^3.1.3",
     "pdfjs-dist": "^4.7.76",
-    "promptfoo": "^0.93.0",
+    "promptfoo": "^0.96.2",
     "puppeteer": "23.5.2",
     "recordrtc": "^5.6.2",
     "replicate": "^0.33.0",
