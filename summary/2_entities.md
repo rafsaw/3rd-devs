@@ -1,20 +1,22 @@
-- Generatywne AI: Ocena możliwości przetwarzania tekstu, audio i obrazu.
-- Midjourney: Narzędzie do generowania grafik.
-- Stable Diffusion: Technologia generatywnej grafiki.
-- picthing: Narzędzie do usuwania tła z zdjęć, stworzone przez `Theo — t3.gg`.
-- Pieter Levels: Twórca projektów PhotoAI i InteriorAI.
-- PhotoAI: Projekt do tworzenia zdjęć.
-- InteriorAI: Projekt adresujący konkretne problemy w dziedzinie wnętrz.
-- Flux: Model generatywnego AI.
-- Replicate: Platforma do modeli AI.
-- Leonardo.ai: Platforma AI.
-- RunPod: Usługi związane z dostępem do GPU.
-- ComfyUI: Narzędzie do modyfikacji grafik.
-- Runway, Heygen, Kling AI: Narzędzia do animacji grafiki do formy wideo.
-- LLM: Modele dużego języka.
-- Meta Prompt: Składnik do tworzenia grafik.
-- htmlcsstoimage: Narzędzie do generowania grafik z szablonów HTML.
-- Vision Language Models: Modele łączące wizję i język.
-- eduweb.pl: Platforma zajmująca się edukacją i publikacjami.
-- HTMLCSStoImage: Usługa tworzenia grafik z HTML.
-- ComfyUI oraz HTMLCSStoImage: Narzędzia używane do wsparcia procesów marketingowych i produktowych.
+- generatywne AI: technologia używana do przetwarzania tekstu, audio oraz interpretacji obrazu
+- Midjourney: narzędzie do generowania grafik
+- Stable Diffusion: narzędzie do generowania grafik
+- picthing: narzędzie do usuwania tła ze zdjęć, stworzone przez `Theo — t3.gg`
+- Pieter Levels: osoba, twórca projektów PhotoAI i InteriorAI
+- PhotoAI: projekt autorstwa Pietera Levels
+- InteriorAI: projekt autorstwa Pietera Levels
+- Flux: model do generowania obrazów
+- ComfyUI: interfejs do generowania grafik
+- Replicate: platforma do udostępniania modeli AI przez API
+- Leonardo.ai: platforma do generowania grafik
+- RunPod: usługa oferująca dostęp do GPU
+- Runway: aplikacja do animacji grafik
+- Heygen: narzędzie do generacji wideo
+- Kling AI: narzędzie do generacji wideo
+- htmlcsstoimage: API do generowania grafik na podstawie szablonów HTML
+- Vision Language Models: modele umożliwiające generowanie grafik
+- eduweb.pl: platforma edukacyjna, przykłady zastosowania szablonów do generowania grafik
+- LLM: modele językowe
+- prompt: opis w języku naturalnym używany do generowania obrazów
+- meta prompt: formularz promptu, który można łatwo dostosować
+- Alice: postać używana jako przykład w generacji grafik

@@ -5,6 +5,7 @@ Więcej informacji znajdziesz na [aidevs.pl](https://aidevs.pl).
 
 ## Wymagania
 
+
 Wszystkie przykłady zostały napisane w JavaScript / TypeScript i większość z nich zawiera kod backendowy do którego uruchomienia potrzebny jest Node.js oraz Bun.
 
 - [Node.js](https://nodejs.org)

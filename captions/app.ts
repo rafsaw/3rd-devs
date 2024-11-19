@@ -114,7 +114,8 @@ async function refineDescription(image: Image): Promise<Image> {
 
     console.log(userMessage);
 
-    const response = await openaiService.completion([refineDescriptionSystemMessage, userMessage], 'gpt-4o', false) as ChatCompletion;
+    // const response = await openaiService.completion([refineDescriptionSystemMessage, userMessage], 'gpt-4o', false) as ChatCompletion;
+    const response = await openaiService.completion([refineDescriptionSystemMessage, userMessage], 'gpt-4o-mini', false) as ChatCompletion;
     const result = response.choices[0].message.content || '';
     return { ...image, description: result };
 }
@@ -130,10 +131,12 @@ async function processAndSummarizeImages(title: string, path: string) {
     const images = await extractImages(article);
     console.log('Number of images found:', images.length);
 
+    // <RS> uses openai gpt-4o to get image context
     const contexts = await getImageContext(title, article, images);
     console.log('Number of image metadata found:', contexts.images.length);
 
     // Process each image: use context and preview from getImageContext, then refine description
+    // <RS> uses openai gpt-4o-mini to refine description
     const processedImages = await Promise.all(images.map(async (image) => {
         const { context = '', preview = '' } = contexts.images.find(ctx => ctx.name === image.name) || {};
         return await refineDescription({ ...image, preview, context });

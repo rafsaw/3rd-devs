@@ -42,7 +42,19 @@ async function extractInformation(title: string, text: string, extractionType: s
         role: 'user'
     };
 
-    const response = await openaiService.completion([extractionMessage, userMessage], 'gpt-4o', false) as ChatCompletion;
+   // Save messages to file
+   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+   const messagesContent = JSON.stringify({ extractionMessage, userMessage }, null, 2);
+   await writeFile(
+       join(__dirname, `prompts_${extractionType}_${timestamp}.json`),
+       messagesContent,
+       'utf8'
+   );
+
+   console.log(`Prompts saved to ${join(__dirname, `prompts_${extractionType}_${timestamp}.json`)}`);
+
+    // const response = await openaiService.completion([extractionMessage, userMessage], 'gpt-4o', false) as ChatCompletion;
+    const response = await openaiService.completion([extractionMessage, userMessage], 'gpt-4o-mini', false) as ChatCompletion;
     return response.choices[0].message.content || '';
 }
 
@@ -163,7 +175,7 @@ Provide the final compressed version within <final_answer> tags.
 Let's start.`,
         role: 'user'
     };
-
+// <RS> add save to file for review
     const response = await openaiService.completion([summarizeMessage], 'o1-preview', false) as ChatCompletion;
     return response.choices[0].message.content || '';
 }

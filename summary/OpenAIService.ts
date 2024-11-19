@@ -56,7 +56,7 @@ export class OpenAIService {
           response_format: jsonMode ? { type: "json_object" } : { type: "text" }
         })
       });
-      
+      console.log("<RS>Model:", model);
       if (stream) {
         return chatCompletion as AsyncIterable<OpenAI.Chat.Completions.ChatCompletionChunk>;
       } else {
