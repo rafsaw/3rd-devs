@@ -95,39 +95,32 @@ async function sendMessageToVerifyAPI(msgID: number, text: string): Promise<APIM
   }
 }
 
-// Example usage
 async function main() {
-
   try {
-  
-  const response = await sendMessageToVerifyAPI(0, "ready");
-  console.log("API Response:", response);
+    // Initial API call
+    const initialResponse = await sendMessageToVerifyAPI(0, "ready");
+    console.log("API Response:", initialResponse);
 
-  const currentMsgID = response.msgID;
-  const task = response.text;
-  const label = await addLabel(task);
-  console.log(`Task: "${task.slice(-20)}..." - Label: ${label}`);
+    const { msgID, text: task } = initialResponse;
+    const label = await addLabel(task);
+    console.log(`Task: "${task.slice(-20)}..." - Label: ${label}`);
 
-  if (label === 'other') {
+    // Map of label types to their corresponding responses
+    const responses = {
+      'capital of poland': 'Krakow',
+      'hitchhiker': '69',
+      'current year': '1999',
+      'other': await respondToTask(task)
+    };
 
-    const label = await respondToTask(task);
-
-    const response = await sendMessageToVerifyAPI(currentMsgID, label);
+    // Send response based on label
+    const response = await sendMessageToVerifyAPI(
+      msgID, 
+      responses[label as keyof typeof responses]
+    );
     console.log("API Response:", response);
-    
-  } else if (label === 'capital of poland') {
-    const response = await sendMessageToVerifyAPI(currentMsgID, "Krakow");
-    console.log("API Response:", response);
-  } else if (label === 'hitchhiker') {
-    const response = await sendMessageToVerifyAPI(currentMsgID, "69");
-    console.log("API Response:", response);
-  } else if (label === 'current year') {
-    const response = await sendMessageToVerifyAPI(currentMsgID, "1999");
-    console.log("API Response:", response);
-  }
 
-  } catch(error){
-    //console.error("Error in main:", error);
+  } catch(error) {
     console.error("Error in main");
   }
 }
