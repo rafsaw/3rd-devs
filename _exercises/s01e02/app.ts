@@ -16,7 +16,7 @@ async function addLabel(task: string): Promise<string> {
   const openai = new OpenAI();
 
   const messages: ChatCompletionMessageParam[] = [
-    { role: "system", content: "You are a task categorizer. Categorize the given task as 'capital of poland', 'hitchhikers guide', 'current year', or 'other'. Respond with only the category name." },
+    { role: "system", content: "You are a task categorizer. Categorize the given task as 'capital of poland', 'hitchhiker', 'current year', or 'other'." },
     { role: "user", content: task }
   ];
 
@@ -24,14 +24,14 @@ async function addLabel(task: string): Promise<string> {
     const chatCompletion = await openai.chat.completions.create({
       messages,
       model: "gpt-4o-mini",
-      max_tokens: 5,
+      max_tokens: 6,
       temperature: 0,
     });
 
     if (chatCompletion.choices[0].message?.content) {
       const label = chatCompletion.choices[0].message.content.trim().toLowerCase();
       //console.log(label);
-      return ['capital of poland', 'hitchhikers guide', 'current year'].includes(label) ? label : 'other';
+      return ['capital of poland', 'hitchhiker', 'current year'].includes(label) ? label : 'other';
     } else {
       console.log("Unexpected response format");
       return 'other';
@@ -41,6 +41,40 @@ async function addLabel(task: string): Promise<string> {
     return 'other';
   }
 }
+
+async function respondToTask(task: string): Promise<string> {
+  const openai = new OpenAI();
+
+  const messages: ChatCompletionMessageParam[] = [
+    { role: "system", content: "You are a task categorizer. Respond in english. Respond in a single word." },
+    { role: "user", content: task }
+  ];
+
+  try {
+
+    const chatCompletion = await openai.chat.completions.create({
+      messages,
+      model: "gpt-4o-mini",
+      max_tokens: 1,
+      temperature: 0,
+    });    
+
+    if (chatCompletion.choices[0].message?.content) {
+      const label = chatCompletion.choices[0].message.content.trim().toLowerCase();
+      console.log(label);
+      return label
+    } else {
+      console.log("Unexpected response format");
+      return 'other';
+    }
+
+  } catch (error) {
+    console.error("Error in OpenAI completion:", error);
+    return 'error';
+  }
+}
+
+
 
 async function sendMessageToVerifyAPI(msgID: number, text: string): Promise<APIMessage> {
   try {
@@ -55,7 +89,8 @@ async function sendMessageToVerifyAPI(msgID: number, text: string): Promise<APIM
       throw new Error("Invalid response format");
     }
   } catch (error) {
-    console.error("Error sending message:", error);
+    //RS> 
+    //console.error("Error sending message:", error);
     throw error;
   }
 }
@@ -74,13 +109,16 @@ async function main() {
   console.log(`Task: "${task.slice(-20)}..." - Label: ${label}`);
 
   if (label === 'other') {
-    const response = await sendMessageToVerifyAPI(currentMsgID, "TO DO");
+
+    const label = await respondToTask(task);
+
+    const response = await sendMessageToVerifyAPI(currentMsgID, label);
     console.log("API Response:", response);
     
   } else if (label === 'capital of poland') {
     const response = await sendMessageToVerifyAPI(currentMsgID, "Krakow");
     console.log("API Response:", response);
-  } else if (label === 'hitchhikers guide') {
+  } else if (label === 'hitchhiker') {
     const response = await sendMessageToVerifyAPI(currentMsgID, "69");
     console.log("API Response:", response);
   } else if (label === 'current year') {
@@ -89,7 +127,8 @@ async function main() {
   }
 
   } catch(error){
-    console.error("Error in main:", error);
+    //console.error("Error in main:", error);
+    console.error("Error in main");
   }
 }
 
