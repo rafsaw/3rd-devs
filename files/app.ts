@@ -8,6 +8,8 @@ import type { ChatCompletionMessageParam } from 'ai/prompts';
 const app = express();
 const port = 3000;
 app.use(express.json());
+// TODO: add cors
+const cors = 'RS>test';
 app.listen(port, () => console.log(`Server running at http://localhost:${port}. Listening for POST /api/chat requests`));
 
 const openaiService = new OpenAIService();
