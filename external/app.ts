@@ -16,7 +16,8 @@ app.use(errorHandler);
 app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
 
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  const currentTime = new Date().toLocaleString();
+  res.send(`Hello World! Current time: ${currentTime}`);
 });
 
 // Routes
