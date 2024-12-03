@@ -8,3 +8,4 @@ node_modules/
 
 # Ignore context folder only in the files directory
 /files/context/** 
+/exercises/s02e04/files/
