@@ -75,7 +75,8 @@
     "s01e02": "bun run _exercises/s01e02/app.ts",
     "s01e03": "bun run _exercises/s01e03/app.ts",
     "s01e04": "bun run _exercises/s01e04/app.ts",
-    "s01e05": "bun run _exercises/s01e05/app.ts"
+    "s01e05": "bun run _exercises/s01e05/app.ts",
+    "s02e04:audio": "bun run _exercises/s02e04/app.audio.ts"
   },
   "peerDependencies": {
     "typescript": "^5.6.3"
