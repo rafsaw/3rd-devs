@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import type { ChatCompletion, ChatCompletionMessageParam } from "openai/resources/chat/completions";
 import { LangfuseTraceClient } from 'langfuse';
 import type { LangfuseService } from "./LangfuseService";
+import type { MemoryService } from "./MemoryService";
 
 export interface ParsingError {
     error: string;
@@ -21,10 +22,12 @@ export interface ShouldLearnResponse {
 
 export class AssistantService {
     private openaiService: OpenAIService;
+    private memoryService: MemoryService;
     private langfuseService: LangfuseService;
 
-    constructor(openaiService: OpenAIService, langfuseService: LangfuseService) {
+    constructor(openaiService: OpenAIService, memoryService: MemoryService, langfuseService: LangfuseService) {
         this.openaiService = openaiService;
+        this.memoryService = memoryService;
         this.langfuseService = langfuseService;
     }
 

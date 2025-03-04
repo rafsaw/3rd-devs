@@ -1,31 +1,29 @@
-- ![Cover](https://cloud.overment.com/S02E03-1731372201.png): Cover image for the lesson.
-- [Midjourney](tools/Midjourney.md): A tool for generating images using generative AI.
-- [Stable Diffusion](glossary/Stable%20Diffusion.md): Another tool for generating images with generative AI.
-- [picthing](https://pic.ping.gg/): Tool for effective background removal in images created by Theo from `t3.gg`.
-- [Pieter Levels](https://x.com/levelsio): Creator known for various projects in generative AI.
-- [PhotoAI](https://photoai.com/): A project by Pieter Levels dealing with photo generation.
-- [InteriorAI](https://interiorai.com): Another project by Pieter Levels focusing on interior design solutions.
-- [Comparing AI-generated images two years apart — 2022 vs. 2024](https://medium.com/@junehao/comparing-ai-generated-images-two-years-apart-2022-vs-2024-6c3c4670b905): An article highlighting the progress of AI-generated images.
-- [Flux](glossary/Flux.md): A model used for generating images that include text and complex elements.
-- [ComfyUI](ComfyUI): A tool allowing for image manipulation and generation with customizable options.
-- [Replicate](tools/Replicate.md): A service providing access to AI models through API.
-- [Leonardo.ai](https://leonardo.ai/): An AI tool for creative image generation.
-- [RunPod](https://blog.runpod.io/how-to-get-stable-diffusion-set-up-with-comfyui-on-runpod/): A platform for accessing GPU resources for AI models.
-- [Runway](https://runwayml.com/): A tool for creating video content from generated images.
-- [Heygen](https://www.heygen.com/): Another tool for video generation from images.
-- [Kling AI](https://klingai.com/): A platform for generative art and video creation.
-- [htmlcsstoimage](https://htmlcsstoimage.com): A service for generating images from HTML templates.
-- ![](https://cloud.overment.com/2024-09-26/aidevs3_picthing-a5ce0e6a-b.png): Image example showcasing the picthing tool.
-- ![](https://cloud.overment.com/2024-09-26/aidevs3_levelsio-55df5a6e-5.png): Image related to Pieter Levels and his projects.
-- ![](https://cloud.overment.com/2024-09-26/aidevs3_midjourney-79dd9b18-9.png): Image illustrating AI-generated images from 2022 and 2024.
-- ![](https://cloud.overment.com/2024-09-26/aidevs3_peace-955577e3-1.png): Example visual demonstrating model limitations in element generation.
-- ![](https://cloud.overment.com/2024-09-26/aidevs3_swap-92e327ca-8.png): Example of ComfyUI transforming an image.
-- ![](https://cloud.overment.com/2024-09-26/aidevs3_eduweb-b678b9a8-5.png): Example of event and course cover templates used in eduweb.pl.
-- ![](https://cloud.overment.com/2024-09-26/aidevs3_zautomatyzowani-3f6d4577-3.png): Illustration showcasing consistent design in project covers.
-- ![](https://cloud.overment.com/2024-09-26/aidevs3_flow-10bef635-8.png): A visual example of prompt strategy in Midjourney.
-- ![](https://cloud.overment.com/2024-09-27/aidevs3_smoke-2656d5ad-6.png): Generated image of green smoke highlighting prompt usage.
-- ![](https://cloud.overment.com/2024-09-27/aidevs3_init-fec66d1f-8.png): Visualization of avatars based on early iteration prompts.
-- ![](https://cloud.overment.com/2024-09-27/aidevs3_metaprompt-472bcf88-b.png): Image showcasing the use of a meta prompt for avatar generation.
-- ![](https://cloud.overment.com/2024-09-27/aidevs3_avatars-939ec7b0-3.png): Resulting avatars generated from prompts.
-- ![](https://cloud.overment.com/2024-09-27/aidevs3_alice-4b6dfb48-a.png): Generated images of Alice demonstrating illustration styles.
-- ![](https://cloud.overment.com/2024-09-27/aidevs3_comfy-0886bf82-c.png): Workflow example showcasing functionality in ComfyUI.
+- ![Cover](https://cloud.overment.com/S02E03-1731372201.png): Cover image for the article. 
+- [Midjourney](tools/Midjourney.md): A tool for generating graphics and images using generative AI.
+- [Stable Diffusion](glossary/Stable%20Diffusion.md): A well-known model for generating images through AI.
+- [picthing](https://pic.ping.gg/): Tool developed by Theo that effectively removes backgrounds from images with improved quality.
+- [Pieter Levels](https://x.com/levelsio): A developer with projects focusing on useful AI solutions.
+- [PhotoAI](https://photoai.com/): One of Pieter Levels' projects aimed at solving specific problems related to photography.
+- [InteriorAI](https://interiorai.com): Another one of Pieter Levels' projects that offers practical solutions.
+- [Comparing AI-generated images two years apart — 2022 vs. 2024](https://medium.com/@junehao/comparing-ai-generated-images-two-years-apart-2022-vs-2024-6c3c4670b905): An article demonstrating the advancements in AI image generation over two years.
+- [Flux](glossary/Flux.md): A model that has improved the ability to generate specific elements in images.
+- [ComfyUI](ComfyUI): A user interface for generating graphics that allows for higher control over image creation.
+- [Replicate](tools/Replicate.md): A service providing access to models via API for image generation.
+- [Leonardo.ai](https://leonardo.ai/): Another platform offering AI tools for image generation.
+- [RunPod](https://blog.runpod.io/how-to-get-stable-diffusion-set-up-with-comfyui-on-runpod/): A platform for hosting models and accessing GPUs for image generation.
+- [Runway](https://runwayml.com/): A tool for transforming graphics into video formats using AI.
+- [Heygen](https://www.heygen.com/): AI tool for generating video content from graphics.
+- [Kling AI](https://klingai.com/): Another AI tool for creating animations from graphics.
+- [htmlcsstoimage](https://htmlcsstoimage.com): Tool that allows generating graphics using HTML templates via API.
+- ![Image from ComfyUI](https://cloud.overment.com/2024-09-26/aidevs3_picthing-a5ce0e6a-b.png): Example of functionality in the picthing tool for background removal.
+- ![Image of Pieter Levels' project](https://cloud.overment.com/2024-09-26/aidevs3_levelsio-55df5a6e-5.png): Visual representation of Pieter Levels' AI projects.
+- ![AI-generated image comparison](https://cloud.overment.com/2024-09-26/aidevs3_midjourney-79dd9b18-9.png): Example of AI-generated images to showcase advancements in technology.
+- ![Example of AI-generated hands](https://cloud.overment.com/2024-09-26/aidevs3_peace-955577e3-1.png): Image indicating the struggles with generating specific elements like hands and text.
+- ![Example of image transformation](https://cloud.overment.com/2024-09-26/aidevs3_swap-92e327ca-8.png): Showcases a face swap feature in ComfyUI.
+- ![Eduweb template example](https://cloud.overment.com/2024-09-26/aidevs3_eduweb-b678b9a8-5.png): Example of templates used for event and course covers published on eduweb.pl.
+- ![Previous project covers](https://cloud.overment.com/2024-09-26/aidevs3_zautomatyzowani-3f6d4577-3.png): Covers from a previous project showing consistent design styles.
+- ![Visualizing green smoke](https://cloud.overment.com/2024-09-26/aidevs3_smoke-2656d5ad-6.png): Image illustrating an example of visuals created based on a simple prompt.
+- ![Avatar creation](https://cloud.overment.com/2024-09-27/aidevs3_smokeref-66a2ba4c-7.png): Initial version of avatars showcasing a specific style.
+- ![Alice character generation](https://cloud.overment.com/2024-09-27/aidevs3_alice-4b6dfb48-a.png): Generated images based on a character reference.
+- ![Workflow example with ComfyUI](https://cloud.overment.com/2024-09-27/aidevs3_comfy-0886bf82-c.png): Diagram showcasing the workflow of using ComfyUI for generating graphics. 
+- [Vimeo link](https://player.vimeo.com/video/1029104946?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479): Video resource related to ComfyUI, mention for users without a suitable computing setup. 

@@ -58,12 +58,13 @@ async function readFilesFromDirectory(directoryPath: string) {
   }
 }
 
+// # Transcribe audio files
 // Chat endpoint POST /api/process
 app.post('/api/process', async (req, res) => {
   // const { message } = req.body;
   // const { directoryPath } = req.body;
   // const directoryPath = './src'; // Hardcoded path - change this to your desired folder path
-  const directoryPath = 'C:\\Users\\rafal\\Downloads\\przesluchania'; // Windows path with escaped backslashes
+  const directoryPath = 'C:\\Users\\rafal\\Downloads\\s02e01przesluchania'; // Windows path with escaped backslashes
 
   try {
     const files = await readFilesFromDirectory(directoryPath);
@@ -141,6 +142,7 @@ async function processDataPoligon(apiKey: string, taskToken: string) {
   }
 }
 
+// # Send exercise response to the server - centrala.ag3nts.org
 async function processData(apiKey: string, taskToken: string) {
   try {
     //S02E01 — Audio i interfejs głosowy

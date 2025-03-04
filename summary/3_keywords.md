@@ -1,30 +1,29 @@
-- generatywne AI
-- przetwarzanie tekstu
-- przetwarzanie audio
-- manipulacja grafiką
-- generowanie grafik
-- projektowanie graficzne
-- narzędzia AI
-- Midjourney 
-- Stable Diffusion 
-- picthing 
-- Pieter Levels 
-- PhotoAI 
-- InteriorAI 
-- generowanie obrazów
-- flux 
-- prompt 
-- API 
-- RunPod 
-- Leonardo.ai 
-- ComfyUI 
-- szablony
-- HTML do obrazu
-- Vision Language Models 
-- automatyzacja marketingu 
-- tworzenie reklam 
-- edycja zdjęć 
-- programowanie w grafice 
-- narzędzia do grafiki
-- statystyki użyteczności
-- skalowanie obrazu
+- Generatywne AI
+- Przetwarzanie tekstu
+- Przetwarzanie audio
+- Manipulacja grafiką i zdjęciami
+- Narzędzia do generacji grafiki: 
+  - Midjourney: [Midjourney](tools/Midjourney.md)
+  - Stable Diffusion: [Stable Diffusion](glossary/Stable%20Diffusion.md)
+  - Picthing: [picthing](https://pic.ping.gg/)
+  - PhotoAI: [PhotoAI](https://photoai.com/)
+  - InteriorAI: [InteriorAI](https://interiorai.com/)
+- Zastosowanie generatywnej AI w produktach
+- Zdolności generowania obrazu
+- Ograniczenia modeli generatywnych
+- Przykład ComfyUI: [ComfyUI](ComfyUI)
+- Usługi API do modeli generujących: 
+  - Replicate: [Replicate](tools/Replicate.md)
+  - Leonardo.ai: [Leonardo.ai](https://leonardo.ai/)
+  - RunPod: [RunPod](https://blog.runpod.io/how-to-get-stable-diffusion-set-up-with-comfyui-on-runpod/)
+- Wykorzystywanie szablonów w kreatywnym procesie
+- Vision Language Models: [Vision Language Models](glossary/Vision%20Language%20Models.md)
+- Techniki projektowania promptów
+- Metoda używania słów kluczowych i flag
+- Generowanie grafik na podstawie HTML: [htmlcsstoimage](https://htmlcsstoimage.com)
+- Automatyzacja procesu generowania grafik
+- Morphing i stylizacja obrazów
+- Przykłady aplikacji i procesów marketingowych
+- Eduweb jako przykład zastosowania technologii w obszarze promocyjnym
+- Meta prompt: [Meta Prompt](glossary/Meta%20Prompt.md)
+- Wideo z instrukcją: [ComfyUI Video](https://player.vimeo.com/video/1029104946?badge=0&autopause=0&player_id=0&app_id=58479)

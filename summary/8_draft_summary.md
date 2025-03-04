@@ -2,56 +2,62 @@
 
 ![Cover](https://cloud.overment.com/S02E03-1731372201.png)
 
-W dobie dynamicznie rozwijającego się generatywnego AI, które radzi sobie doskonale z przetwarzaniem tekstu, audio i obrazów, pojawia się coraz więcej opcji manipulacji i tworzenia nowych grafik oraz zdjęć. Choć tradycyjnie projektowanie wizualne nie było bezpośrednio związane z programowaniem, generatywne AI zmienia ten krajobraz, włączając programistów w obszary zarezerwowane wcześniej dla projektantów i ilustratorów.
+Generatywne AI przeszło imponującą drogę od swojego zaistnienia na polu przetwarzania tekstu i audio. Obecnie jesteśmy świadkami jego dynamicznego rozwoju w zakresie manipulacji i generowania grafik oraz zdjęć. Choć tradycyjnie projektowanie graficzne i praca z fotografiami oddzielano od programowania, obecne narzędzia do generatywnego AI przyciągają uwagę nie tylko projektantów, ale również deweloperów.
 
-## Generatywne narzędzia AI
+## Skuteczność narzędzi generatywnego AI
 
-Kilka narzędzi, takich jak [Midjourney](tools/Midjourney.md) czy [Stable Diffusion](glossary/Stable%20Diffusion.md), zazwyczaj wybieranych przez osoby zajmujące się projektowaniem graficznym, teraz znajduje zastosowanie także w świecie programistów. Dzięki ich integracji, programiści mogą wykorzystywać te narzędzia do wzbogacania funkcjonalności już rozwijanych aplikacji.
+Nie jest tajemnicą, że narzędzia takie jak [Midjourney](tools/Midjourney.md) czy [Stable Diffusion](glossary/Stable%20Diffusion.md) zdobyły popularność wśród grafików i ilustratorów. Ale ich potencjał sięga dalej, obejmując deweloperów, którzy używają AI do tworzenia praktycznych rozwiązań. 
 
-Narzędziem, które dobrze ilustruje potencjał generatywnego AI, jest [picthing](https://pic.ping.gg/), stworzonym przez Theo z `t3.gg`. Umożliwia ono wysokiej jakości usuwanie tła ze zdjęć, co jest lepsze niż wiele istniejących metod.
+### Przykładowe aplikacje
 
-![](https://cloud.overment.com/2024-09-26/aidevs3_picthing-a5ce0e6a-b.png)
+Jednym z przykładów wykorzystania AI jest [picthing](https://pic.ping.gg/), narzędzie do usuwania tła z obrazów. Dzięki zastosowaniu generatywnego AI, projekt odznacza się wyższą jakością, co pokazuje, jak technologie te mogą znacząco podnieść jakość aplikacji i produktów.
 
-### Projekty Pietera Levelsa
+![Image from ComfyUI](https://cloud.overment.com/2024-09-26/aidevs3_picthing-a5ce0e6a-b.png)
 
-W kontekście projektów generatywnego AI, warto przyjrzeć się projektom [Pietera Levelsa](https://x.com/levelsio): [PhotoAI](https://photoai.com/) oraz [InteriorAI](https://interiorai.com). Projekty te przedstawiają konkretne zastosowania AI w rozwiązywaniu problemów, co potwierdzają również statystyki udostępniane przez ich twórcę.
+Dzieła Pietera Levelsa, takie jak [PhotoAI](https://photoai.com/) i [InteriorAI](https://interiorai.com), ilustrują skuteczność rozwiązań AI w konkretnych zastosowaniach, co potwierdza udostępnione przez niego statystyki.
 
-![](https://cloud.overment.com/2024-09-26/aidevs3_levelsio-55df5a6e-5.png)
+![Image of Pieter Levels' project](https://cloud.overment.com/2024-09-26/aidevs3_levelsio-55df5a6e-5.png)
 
 ## Obecne możliwości generowania obrazu
 
-Rozwój generatywnych grafik na przestrzeni ostatnich dwóch lat jest imponujący. Artykuł [Comparing AI-generated images two years apart — 2022 vs. 2024](https://medium.com/@junehao/comparing-ai-generated-images-two-years-apart-2022-vs-2024-6c3c4670b905) pokazuje, jak znacząco poprawiła się jakość generowanych obrazów od 2022 roku. Niemniej jednak, pewne ograniczenia w generowaniu określonych elementów, takich jak tekst czy detale postaci, pozostają wyzwaniem dla obecnych modeli AI, jak [Flux](glossary/Flux.md).
+Różnice w generowaniu obrazów na przestrzeni lat są znaczące, co pokazuje porównanie AI generowanych obrazów pomiędzy latami 2022 a 2024. Choć jakość uległa znacznej poprawie, generowanie złożonych elementów, takich jak tekst czy odbicie w lustrze, wciąż sprawia trudności.
 
-![](https://cloud.overment.com/2024-09-26/aidevs3_midjourney-79dd9b18-9.png)
+![AI-generated image comparison](https://cloud.overment.com/2024-09-26/aidevs3_midjourney-79dd9b18-9.png)
 
-Mimo tych ograniczeń, jakość generowanych obrazów jest obecnie bardzo wysoka. Modele mogą być używane nie tylko do kreowania nowych obrazów, ale również do edycji istniejących grafik. Przykład narzędzia [ComfyUI](ComfyUI) pokazuje, jak można przekształcać twarz na zdjęciu wygenerowanym poprzez [Midjourney](tools/Midjourney.md).
+Mimo wyzwań, jakość generowanych obrazów pozwala na uzyskiwanie satysfakcjonujących efektów, zwłaszcza w kontekście edycji częściowych elementów, jak zamiana twarzy za pomocą narzędzi takich jak [ComfyUI](ComfyUI).
 
-![](https://cloud.overment.com/2024-09-26/aidevs3_swap-92e327ca-8.png)
+![Example of image transformation](https://cloud.overment.com/2024-09-26/aidevs3_swap-92e327ca-8.png)
 
-## Wdrożenie modeli poprzez API
+### Dostępność modeli przez API i hosting
 
-Dla programistów kluczową zaletą jest dostępność modeli poprzez API lub możliwość ich samoobsługowego hostowania. Usługi takie jak [Replicate](tools/Replicate.md) i [Leonardo.ai](https://leonardo.ai/) umożliwiają deweloperom integrację zaawansowanych modeli graficznych w swoich projektach. Platforma [RunPod](https://blog.runpod.io/how-to-get-stable-diffusion-set-up-with-comfyui-on-runpod/) to przykład rozwiązania dla tych, którzy potrzebują dostępu do GPU do własnych wdrożeń.
+Deweloperzy mogą korzystać z modeli AI poprzez API, jak np. [Replicate](tools/Replicate.md) czy [Leonardo.ai](https://leonardo.ai/), lub hostować własne modele na platformach takich jak [RunPod](https://blog.runpod.io/how-to-get-stable-diffusion-set-up-with-comfyui-on-runpod/).
 
-Podczas manipulacji obrazami, korzystanie z szablonów jest nieocenione, szczególnie w celach marketingowych, takich jak tworzenie różnych form reklamowych, czy grafik na potrzeby blogów. W czasie oszczędza to wiele pracy, pozwalając na automatyczne modyfikacje zdjęć i tekstów.
+### Wykorzystanie szablonów
 
-![](https://cloud.overment.com/2024-09-26/aidevs3_eduweb-b678b9a8-5.png)
+Generowanie grafik według szablonów ma kluczowe znaczenie w marketingu, umożliwiając efektywne tworzenie wieloformatowych projektów promocyjnych. Szablony, jak te używane na eduweb.pl, pozwalają na szybkie modyfikacje grafik przy minimalnych nakładach pracy.
 
-## Znaczenie promptów i metastrategii
+![Eduweb template example](https://cloud.overment.com/2024-09-26/aidevs3_eduweb-b678b9a8-5.png)
 
-Podobnie jak w przypadku modeli językowych (LLM), generowanie grafik opiera się na odpowiednim zdefiniowaniu promptów. W praktyce oznacza to używanie słów kluczowych oraz flag sterujących ustawieniami. Obrazy referencyjne mogą pomóc w zachowaniu spójności stylu, co jest ważne dla projektów zgodnych z marką. Przykład prompty z [Midjourney](tools/Midjourney.md) pokazuje, jak użycie metapromptów może prowadzić do uzyskania spójnych stylów w nowych grafikach.
+## Techniki projektowania promptów dla modeli
 
-![](https://cloud.overment.com/2024-09-27/aidevs3_smoke-2656d5ad-6.png)
+Tworzenie grafik wymaga umiejętności skonstruowania skutecznych promptów, które w przeciwieństwie do poleceń dla modeli językowych, skupiają się na użyciu słów kluczowych i flag kontrolnych. Przykład promptu w [Midjourney](tools/Midjourney.md) ilustruje znaczenie precyzyjnego opisu potrzeb oraz eksperymentowania z różnymi strategiami.
 
-## Narzędzia oparte na szablonach HTML
+![Example of AI-generated hands](https://cloud.overment.com/2024-09-26/aidevs3_peace-955577e3-1.png)
 
-[ComfyUI](ComfyUI) i narzędzia takie jak [htmlcsstoimage](https://htmlcsstoimage.com) umożliwiają generowanie obrazów na podstawie szablonów HTML, modyfikowanych dynamicznie na potrzeby API. Daje to ogromne możliwości w zakresie dostosowywania grafiki w zależności od potrzeb użytkownika, zachowując jednocześnie pełną kontrolę nad stylem i formatem.
+## Generowanie grafik w oparciu o szablony
 
-![](https://cloud.overment.com/2024-09-27/aidevs3_htmlcsstoimage-c6f590af-a.png)
+Rozwiązania takie jak [htmlcsstoimage](https://htmlcsstoimage.com) oferują możliwość generowania grafik poprzez API na podstawie dynamicznych szablonów HTML. Użytkownicy mogą zdefiniować szablony z pesonalianymi kolorami, stylami i układem, co pozwala na dopasowane do wymagań tworzenia kreacji.
+
+![Avatar creation](https://cloud.overment.com/2024-09-27/aidevs3_smokeref-66a2ba4c-7.png)
 
 ## Podsumowanie
 
-Narzędzia generatywnej grafiki AI otwierają nowe perspektywy dla automatyzacji i tworzenia wyspecjalizowanych narzędzi do przekształcania obrazów. Nawet jeśli praca nad projektami wizualnymi nie jest naszym głównym zajęciem, wiedza na temat implementacji generatywnych technologii może okazać się niezwykle wartościowa. Szczególnie [ComfyUI](ComfyUI) i [htmlcsstoimage](https://htmlcsstoimage.com) zasługują na uwagę, pozwalając na wprowadzanie zaawansowanych procesów w działaniach marketingowych i produktowych.
+Rozwój generatywnego AI dostarcza narzędzi, które mogą automatyzować procesy graficzne i wspierać tworzenie specjalistycznych rozwiązań. Szczególne miejsce zajmują [ComfyUI](ComfyUI) i [HTMLCSStoImage](https://htmlcsstoimage.com), które integrują programowanie z generatywną grafiką. Wiedza o wykorzystaniu takich narzędzi jest bezcenna i może przynieść korzyści w wielu obszarach, od marketingu po edycję obrazów.
 
-Wiedza na temat tworzenia programistycznych rozwiązań z wykorzystaniem modeli generatywnych grafiki daje praktyczne możliwości i jest widoczna w licznych projektach, takich jak te autorstwa Pietera Levelsa.
+### Ważne
 
-*Powodzenia w eksplorowaniu możliwości generatywnej grafiki!*
+Osoby nieposiadające odpowiednich zasobów komputerowych mogą pominąć film związany z ComfyUI.
+
+<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1029104946?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="02_03_comfy"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+Powodzenia!

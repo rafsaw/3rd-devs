@@ -1,26 +1,26 @@
-- Overview of generative AI capabilities in text and audio processing and image interpretation.
-- Discussion on the manipulation and generation of new graphics and images.
-- Historical context of graphic design and photo editing in relation to programming.
-- Introduction to generative AI tools like:
-  - Midjourney: Image generation tool.
-  - Stable Diffusion: Open-source model for image generation.
-  - picthing: Tool for background removal developed by Theo — t3.gg.
-  - PhotoAI and InteriorAI: Projects by Pieter Levels addressing specific problems.
-- Current capabilities of image generation:
-  - Progress in generative graphics over the last two years.
-  - Reference to an article comparing AI-generated images from 2022 and 2024.
-  - Limitations in generating specific image elements (e.g., text, hands, reflections).
-  - Challenges with following complex prompts.
-- Importance of manipulating images to generate textures and backgrounds or edit existing graphics.
-- Availability of models through APIs or self-hosting (e.g., Replicate, Leonardo.ai, RunPod).
-- Use of templates for generating graphics for marketing purposes.
-- Benefits of generating graphics based on pre-defined HTML templates (e.g., htmlcsstoimage).
-- Techniques for generating graphics using keywords and control flags:
-  - Short prompts with keywords versus detailed descriptions.
-  - Examples from Midjourney’s user galleries.
-- Concept of 'meta prompts' for consistent style and modifying character descriptions.
-- Potential for combining generated images with existing graphics.
-- Summary of generative graphics tools and their potential for automation and specialized tools.
-- Emphasis on ComfyUI and HTMLCSStoImage as significant tools for developers.
-- Note regarding the importance of understanding how to build programming solutions using generative graphics models.
-- Link to a video on working with ComfyUI (optional for those without suitable hardware).
+- Introduction to generative AI's capabilities in text, audio, and image interpretation.
+- Focus on tools for image manipulation and generation.
+- Importance of AI tools like Midjourney and Stable Diffusion for designers and illustrators.
+- Example of picthing for background removal, highlighting generative AI's utility.
+- Mention of Pieter Levels and projects like PhotoAI and InteriorAI for specific use cases.
+- Current state of image generation capabilities:
+  - Comparison of AI-generated images between 2022 and 2024.
+  - Ongoing limitations in generating specific image components like text and reflections.
+  - Quality of generated images improving significantly, but complexity in achieving desired results remains.
+  - Importance of prompt complexity in achieving specific outcomes.
+- Opportunities for using generative graphics in existing applications and functionalities.
+- Key functionalities of generative graphics models:
+  - Scaling images while retaining details.
+  - Automatic background removal and element substitution in images.
+  - Generating consistent images following brand guidelines.
+  - Creating multiple formats from existing graphics.
+  - Animation of graphics into video formats using tools like Runway and Heygen.
+- Techniques for prompt design for models:
+  - Differences in prompt requirements between LLM and image generation.
+  - Importance of keywords and controlling flags in prompts.
+  - Recommendations for creating effective prompts, based on user examples.
+- Integration of templates in graphic generation:
+  - Use of htmlcsstoimage for dynamic image generation via HTML templates.
+  - Potential to build applications that react to social media and newsletter events.
+- Summary highlighting the importance of generative graphic tools for automation and specialized product development.
+- Close connection between programming and tools like ComfyUI and HTMLCSStoImage for advanced marketing solutions.

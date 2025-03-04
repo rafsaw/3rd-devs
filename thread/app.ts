@@ -48,7 +48,8 @@ app.post('/api/chat', async (req, res) => {
 
   try {
     const systemPrompt = createSystemPrompt(previousSummarization);
-
+    console.log('systemPrompt:', systemPrompt);
+    console.log('message:', message);
     const assistantResponse = await openaiService.completion([
         systemPrompt, 
         message
@@ -56,6 +57,7 @@ app.post('/api/chat', async (req, res) => {
 
     // Generate new summarization
     previousSummarization = await generateSummarization(message, assistantResponse.choices[0].message);
+    console.log('previousSummarization:', previousSummarization);
     
     res.json(assistantResponse);
   } catch (error) {

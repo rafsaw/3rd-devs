@@ -1,22 +1,18 @@
-- generatywne AI: technologia używana do przetwarzania tekstu, audio oraz interpretacji obrazu
-- Midjourney: narzędzie do generowania grafik
-- Stable Diffusion: narzędzie do generowania grafik
-- picthing: narzędzie do usuwania tła ze zdjęć, stworzone przez `Theo — t3.gg`
-- Pieter Levels: osoba, twórca projektów PhotoAI i InteriorAI
-- PhotoAI: projekt autorstwa Pietera Levels
-- InteriorAI: projekt autorstwa Pietera Levels
-- Flux: model do generowania obrazów
-- ComfyUI: interfejs do generowania grafik
-- Replicate: platforma do udostępniania modeli AI przez API
-- Leonardo.ai: platforma do generowania grafik
-- RunPod: usługa oferująca dostęp do GPU
-- Runway: aplikacja do animacji grafik
-- Heygen: narzędzie do generacji wideo
-- Kling AI: narzędzie do generacji wideo
-- htmlcsstoimage: API do generowania grafik na podstawie szablonów HTML
-- Vision Language Models: modele umożliwiające generowanie grafik
-- eduweb.pl: platforma edukacyjna, przykłady zastosowania szablonów do generowania grafik
-- LLM: modele językowe
-- prompt: opis w języku naturalnym używany do generowania obrazów
-- meta prompt: formularz promptu, który można łatwo dostosować
-- Alice: postać używana jako przykład w generacji grafik
+- Generatywne AI: Technologie związane z generowaniem i manipulowaniem tekstem, audio, i obrazem.
+- Midjourney: Narzędzie do generowania obrazów.
+- Stable Diffusion: Narzędzie do generowania obrazów.
+- Picthing: Narzędzie do usuwania tła ze zdjęć, stworzone przez Theo — t3.gg.
+- Pieter Levels: Twórca projektów PhotoAI i InteriorAI.
+- PhotoAI: Projekt adresujący konkretne problemy związane z obrazami.
+- InteriorAI: Projekt adresujący konkretne problemy związane z obrazami.
+- Flux: Model generujący obrazy, coraz lepiej radzący sobie z generowaniem złożonych elementów.
+- ComfyUI: Narzędzie do manipulacji i generacji grafik.
+- Replicate: Usługa oferująca modele AI przez API.
+- Leonardo.ai: Platforma oferująca dostęp do modeli generujących obrazy.
+- RunPod: Platforma oferująca dostęp do GPU.
+- Runway: Narzędzie do animacji grafik w formie wideo.
+- Heygen: Narzędzie do tworzenia wideo.
+- Kling AI: Narzędzie do tworzenia wideo.
+- HTMLCSStoImage: Narzędzie do generowania grafik z templatek HTML.
+- Vision Language Models: Modele łączące przetwarzanie wizualne i językowe.
+- Eduweb.pl: Platforma edukacyjna, która przez wiele lat używała automatycznych szablonów do generowania materiałów promocyjnych.
