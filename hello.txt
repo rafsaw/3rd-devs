@@ -47,3 +47,44 @@ Then resolve any conflicts (if any), and push updated code to your GitHub repo:
 
 # origin	your repo: https://github.com/rafsaw/3rd-devs-reloaded.git
 # upstream	training repo: https://github.com/i-am-alice/3rd-devs.git
+
+
+
+
+
+#code change steps:
+1. Make a test change
+In VS Code or any editor, change a file or create a new one (e.g., hello.txt).
+
+Then in terminal:
+    
+    git add .
+    git commit -m "Test change in week01"
+
+2. Switch back to main
+    
+    git checkout main
+
+3. Merge your week01 branch into main
+
+    git merge week01
+This brings the changes you made in week01 into the main branch.
+
+4. Push your updated main to GitHub
+
+    git push
+
+
+
+
+
+Best Flow When Training Team Updates
+When training team pushes new code:
+ 1. Make sure you're on main
+    git checkout main
+ 2. Pull latest updates from training repo
+    git fetch upstream
+    git merge upstream/main
+    git push origin main  # Optional, to sync your GitHub repo too
+ 3. Create a new branch for your new work
+    git checkout -b week01-day02
