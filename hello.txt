@@ -1,0 +1,49 @@
+testing making changes in branch week01
+
+
+
+Step 1: Create and switch to a new branch. In your terminal (still in 3rd-devs-reloaded folder):
+(give name you want week02 etc...)
+
+    git checkout -b weekXX 
+
+Step 2: Make changes
+Do whatever edits you want — create new files, write code, etc.
+Then stage and commit them:
+
+    git add .
+    git commit -m "My first changes for training"
+
+
+Step 3: Push your feature branch to GitHub
+
+    git push -u origin weekXX
+
+
+
+
+
+You can switch between branches like this:
+git checkout main      # switch to main (original)
+git checkout week01    # switch back to your work
+
+
+
+
+ Next Step (Optional): Keep syncing with training repo
+ When the training team updates their repo (i-am-alice/3rd-devs), you can pull the latest changes like this:
+
+    git fetch upstream
+    git merge upstream/main
+    # or if you prefer rebase:
+    # git rebase upstream/main
+
+Then resolve any conflicts (if any), and push updated code to your GitHub repo:
+
+    git push 
+    #git push origin main #(not sure which one is better)
+
+
+
+# origin	your repo: https://github.com/rafsaw/3rd-devs-reloaded.git
+# upstream	training repo: https://github.com/i-am-alice/3rd-devs.git
