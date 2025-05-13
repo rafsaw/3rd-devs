@@ -1,0 +1,21 @@
+Step 1: Create and switch to a new branch. In your terminal (still in 3rd-devs-reloaded folder):
+(give name you want week02 etc...)
+
+    git checkout -b weekXX 
+
+Step 2: Make changes
+Do whatever edits you want — create new files, write code, etc.
+Then stage and commit them:
+
+    git add .
+    git commit -m "My first changes for training"
+
+
+Step 3: Push your feature branch to GitHub
+
+    git push -u origin weekXX
+
+
+You can switch between branches like this:
+git checkout main      # switch to main (original)
+git checkout week01    # switch back to your work

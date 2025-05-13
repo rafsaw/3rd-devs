@@ -1,0 +1,21 @@
+#code change steps:
+1. Make a test change
+In VS Code or any editor, change a file or create a new one (e.g., hello.txt).
+
+Then in terminal:
+    
+    git add .
+    git commit -m "Test change in week01"
+
+2. Switch back to main
+    
+    git checkout main
+
+3. Merge your week01 branch into main
+
+    git merge week01
+This brings the changes you made in week01 into the main branch.
+
+4. Push your updated main to GitHub
+
+    git push
