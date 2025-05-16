@@ -1,0 +1,51 @@
+1. Pull changes from upstream (make sure you are in main branch)
+
+	git fetch upstream
+
+
+2. Merge upstream's changes into your current branch (e.g. main):
+
+	git checkout main
+	git merge upstream/main
+
+2.1 To finish the merge:
+		If you’re in Vim, do the following:
+
+		Press i to enter insert mode (optional — only if you want to edit the message).
+
+		Press Esc to exit insert mode.
+
+		Type:
+
+		ruby
+		Copy
+		Edit
+		:wq
+		Then hit Enter.
+
+		This will write the commit message and quit, finalizing the merge.
+		
+		
+3. (Optional) Push merged changes to your own GitHub fork:
+
+	git push origin main
+	
+	
+	
+To get the upstream changes into your week01 branch, you have two options:
+Option 1: Merge main into week01
+If you want to include all the new changes from main into week01:
+	git checkout week01
+	git merge main
+	
+Then resolve any conflicts (if any), and:
+	git push origin week01
+	
+	
+Option 2: Rebase week01 on top of main (cleaner history)
+	git checkout week01
+	git rebase main
+Resolve conflicts if prompted (Git will guide you), then:
+	git push --force-with-lease origin week01
+	
+	***Use this only if you're comfortable rewriting commit history or haven't pushed week01 to others yet.
