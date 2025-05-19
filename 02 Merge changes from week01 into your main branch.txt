@@ -1,0 +1,15 @@
+Merge week01 into main (recommended for most cases)
+1. Switch to main:
+	
+	git checkout main
+
+2. Merge changes from week01:
+	
+	git merge week01
+
+3. Push updated main to your GitHub fork:
+
+	git push origin main
+
+
+This keeps both sets of commits visible in history.

@@ -1,0 +1,28 @@
+Step-by-step: Sync with upstream
+
+1. Fetch latest changes from upstream
+
+	git fetch upstream
+
+	This gets the latest commits from the original repo but does not merge them yet.
+
+2. Merge upstream changes into your main branch
+
+	git checkout main
+	git merge upstream/main
+
+	This updates your local main with new changes from the original repo.
+
+	(Optional) Push to your GitHub fork:
+
+	git push origin main
+
+
+3. Merge updated main into your week01 branch
+	Now bring those same updates into week01:
+	
+	git checkout week01
+	git merge main
+
+	(Optional) Push updated week01 to GitHub:
+	git push origin week01
