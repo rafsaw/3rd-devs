@@ -15,11 +15,6 @@
 
 		Press Esc to exit insert mode.
 
-		Type:
-
-		ruby
-		Copy
-		Edit
 		:wq
 		Then hit Enter.
 

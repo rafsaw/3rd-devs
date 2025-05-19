@@ -1,0 +1,5 @@
+run this after installation:
+
+bun use_search
+
+bun websearch
